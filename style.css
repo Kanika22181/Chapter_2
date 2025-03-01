@@ -1,23 +1,27 @@
 .swiper-container {
     width: 100%;
-    height: 400px; /* Ensuring uniform height */
+    max-width: 900px; /* Adjust the width if needed */
+    height: 500px; /* Ensures all images have a uniform height */
+    overflow: hidden;
 }
 
 .swiper-wrapper {
     display: flex;
-    gap: 15px; /* Ensures equal spacing between all images */
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Takes full width of container */
 }
 
 .swiper-slide img {
-    width: 90%; /* Ensures all images take the same width */
-    height: 100%; /* Ensures all images take the same height */
-    object-fit: cover; /* Ensures uniform image display */
+    width: 100%;
+    max-width: 100%; /* Ensures image fits within container */
+    height: auto;
+    object-fit: contain; /* Ensures the full image is shown */
     border-radius: 10px;
     cursor: pointer;
+    margin: 0 15px; /* Ensures equal spacing between images */
 }
