@@ -1,0 +1,23 @@
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Ensuring uniform height */
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 15px; /* Ensures equal spacing between all images */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 90%; /* Ensures all images take the same width */
+    height: 100%; /* Ensures all images take the same height */
+    object-fit: cover; /* Ensures uniform image display */
+    border-radius: 10px;
+    cursor: pointer;
+}
